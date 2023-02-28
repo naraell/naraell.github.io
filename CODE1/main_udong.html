@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>우동_우리 동네 모임</title>
+</head>
+<body>
+    <style>
+        h1{
+            color:blueviolet;
+        }
+    </style>
+    <h1>우동 - 우리 동네 모임!(Woori Dongne)</h1>
+    <h2>멀리 가지 말고 우리 동네에서!</h2>
+    <p>같은 목표를 가진 동네 사람들과 챌린지하기</p>
+    <p>스터디이든, 맛집 투어든, 매일 운동하기 챌린지이든 다 좋다!</p>
+    <h2>현재 우동모임 인기 주제</h2>
+    <ul>
+        <li>토익</li>
+        <li>매일 헬스장 출석하기</li>
+        <li>우리 동네 떡볶이 맛집 찾기</li>
+    </ul>
+    <h2>우리 지역은 어디?</h2>
+    <img src="./images1/크기변환_서울-지도.jpg">
+    <h2>우동 모임 만남 장소!</h2>
+    <video src="./videos1/KakaoTalk_20230228_123918983.mp4" controls></video>
+
+    
+
+
+<!--로그인-->
+    <form>
+        <fieldset>
+            <legend>로그인</legend>
+            <p>
+                <label for="userid">아이디</label>
+                <input type="text" id="userid">
+            </p>
+            <p>
+                <label for="passwd">비밀번호</label>
+                <input type="password" id="passwd">
+            </p>
+            <!--회원가입-->
+           <a href="http://127.0.0.1:5500/signup.html" target="_blank">
+                <button type="button">회원가입🖱️</button>
+           </a>
+            
+        </fieldset>
+    </form>
+
+
+<!--우리동네 모임 찾기 -->
+    <form>
+        <fieldset>
+            <legend>우리 동네 모임 찾기</legend>
+            <p>
+                <select name="city" id="city">
+                    <optgroup label="동네 설정하기">
+                        <option value="강북구">강북구</option>
+                        <option value="강남구">강남구</option>
+                        <option value="서초구">서초구</option>
+                        <option value="성북구">성북구</option>
+                     </optgroup>
+                </select>
+
+                <select name="subject" id="subject">
+                    <optgroup label="주제 설정하기">
+                        <option value="토익">토익</option>
+                        <option value="헬스">헬스</option>
+                        <option value="맛집 탐방">맛집 탐방</option>
+                        <option value="봉사활동">봉사활동</option>
+                        <option value="요리">요리</option>
+                        <option value="뮤지컬">뮤지컬</option>
+                    </optgroup>
+                </select>
+            </p>
+            <a href="http://127.0.0.1:5500/seongbuk.html" target="_blank">
+                <button type="button">👉성북구 우동 게시판
+                </button>
+            </a><br>
+            <a href="http://127.0.0.1:5500/gangnam.html" target="_blank">
+                <button type="button">👉강남구 우동 게시판</button>
+            </a><br>
+        </fieldset>
+    </form>
+
+    <!--건의사항-->
+    <form action="#" method="post">
+        <fieldset>
+            <legend>우리 동네, 이 주제도 추가해주세요!</legend>
+            <p>
+                <label for="region">지역(자세히 적어주세요!)
+                    <input type="text" id="region" name="region">
+                </label>
+            </p>
+            <p>
+                <label for="desc">주제(자세히 적어주세요!)
+                    <textarea id="desc" name="desc"></textarea>
+                </label>
+            </p>
+        </fieldset>
+    </form>
+
+
+
+</body>
+
+</html>
